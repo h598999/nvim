@@ -5,6 +5,7 @@ vim.keymap.set('t', "<leader>nn", vim.cmd.bd)
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 vim.keymap.set("v", "<leader>gcc", "jkI//<esc>")
+vim.keymap.set('n', '<leader>gv', ':Neogit<CR>', {noremap = true, silent = true})
 
 
 vim.keymap.set("n", "J", "mzJ`z")

@@ -16,6 +16,9 @@ require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
+  use({"terrortylor/nvim-comment",
+  require('nvim_comment').setup()})
+
   use({
       "kylechui/nvim-surround",
       tag = "*", -- Use for stability; omit to use `main` branch for the latest features
@@ -26,7 +29,7 @@ require('packer').startup(function(use)
       end
   })
 
-
+  use {'treatybreaker/neogit', branch='feat/author-column-recent-commits', requires =  'nvim-lua/plenary.nvim'}
   use {
       "loctvl842/monokai-pro.nvim",
       config = function()
