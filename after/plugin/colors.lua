@@ -10,7 +10,7 @@ require('bamboo').setup  {
     style = 'vulgaris', -- Choose between 'vulgaris' (regular) and 'multiplex' (greener)
     toggle_style_key = "<leader>ts", -- Keybind to toggle theme style. Leave it nil to disable it, or set it to a string, e.g. "<leader>ts"
     toggle_style_list = { 'vulgaris', 'multiplex' }, -- List of styles to toggle between (this option is essentially pointless now but will become useful if more style variations are added)
-    transparent = true,  -- Show/hide background
+    transparent = false,  -- Show/hide background
     term_colors = true, -- Change terminal color as per the selected theme style
     ending_tildes = false, -- Show the end-of-buffer tildes. By default they are hidden
     cmp_itemkind_reverse = false, -- reverse item kind highlights in cmp menu
@@ -29,7 +29,7 @@ require('bamboo').setup  {
 
     -- Lualine options --
     lualine = {
-        transparent = true, -- lualine center bar transparency
+        transparent = false, -- lualine center bar transparency
     },
 
     -- Custom Highlights --
@@ -38,7 +38,7 @@ require('bamboo').setup  {
 
     -- Plugins Config --
     diagnostics = {
-        darker = false, -- darker colors for diagnostic
+        darker = true, -- darker colors for diagnostic
         undercurl = true,   -- use undercurl instead of underline for diagnostics
         background = true,    -- use background color for virtual text
     },

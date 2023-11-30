@@ -10,14 +10,38 @@ require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
   use "nvim-lua/plenary.nvim"
   use 'mfussenegger/nvim-jdtls'
-  use {
-	  'nvim-telescope/telescope.nvim', tag = '0.1.1',
-	  -- or                            , branch = '0.1.x',
-	  requires = { {'nvim-lua/plenary.nvim'} }
-  }
-
+  -- use {
+  -- 	  'nvim-telescope/telescope.nvim', tag = '0.1.1',
+  -- 	  -- or                            , branch = '0.1.x',
+  --     --
+  -- 	  requires = { {'nvim-lua/plenary.nvim'} }
+  -- }
   use({"terrortylor/nvim-comment",
-  require('nvim_comment').setup()})
+    config = function()
+  require('nvim_comment').setup()
+  end })
+
+  use({
+      "coffebar/neovim-project",
+      config = function()
+          -- enable saving the state of plugins in the session
+          vim.opt.sessionoptions:append("globals") -- save global variables that start with an uppercase letter and contain at least one lowercase letter.
+          -- setup neovim-project plugin
+          require("neovim-project").setup {
+              projects = { -- define project roots
+              "~/Skule/*",
+              "~/Prosjekt/",
+              "~/.config/*",
+          },
+      }
+  end,
+  requires = {
+      { "nvim-lua/plenary.nvim" },
+      { "nvim-telescope/telescope.nvim", tag = "0.1.4" },
+      { "Shatur/neovim-session-manager" },
+  }
+})
+
 
   use({
       "kylechui/nvim-surround",
@@ -171,7 +195,7 @@ use {
               -- filter using buffer options
               bo = {
                 -- if the file type is one of following, the window will be ignored
-                filetype = { 'neo-tree', "neo-tree-popup", "notify" },
+                filetype = { 'neo-tree', "neo-tree-popup", "notify", "class","Identifier" },
 
                 -- if the buffer type is one of following, the window will be ignored
                 buftype = { 'terminal', "quickfix" },
@@ -194,6 +218,12 @@ use {
         {text = "󰌵", texthl = "DiagnosticSignHint"})
 
       require("neo-tree").setup({
+      sync_root_with_cwd = true,
+      respect_buf_cwd = true,
+      update_focused_file = {
+          enable = true,
+          update_root = true
+      },
       event_handlers = {
       {
       event = "file_opened",
@@ -362,7 +392,7 @@ use {
           filtered_items = {
             visible = false, -- when true, they will just be displayed differently than normal items
             hide_dotfiles = true,
-            hide_gitignored = true,
+            hide_gitignored = false,
             hide_hidden = true, -- only works on Windows for hidden files/directories
             hide_by_name = {
               --"node_modules"
@@ -370,6 +400,7 @@ use {
             hide_by_pattern = { -- uses glob style patterns
               --"*.meta",
               --"*/src/*/tsconfig.json",
+              "*.class"
             },
             always_show = { -- remains visible even if other settings would normally hide it
               --".gitignored",
