@@ -1,6 +1,9 @@
 require'nvim-treesitter.configs'.setup {
   -- A list of parser names, or "all" (the five listed parsers should always be installed)
 	ensure_installed = {"lua"},
+    autotag = {
+        enable = true,
+    },
   -- Install parsers synchronously (only applied to `ensure_installed`)
   sync_install = false,
 
@@ -42,4 +45,5 @@ require'treesitter-context'.setup{
   zindex = 20, -- The Z-index of the context window
   on_attach = nil, -- (fun(buf: integer): boolean) return false to disable attaching
 }
+
 }

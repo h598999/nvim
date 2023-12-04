@@ -1,8 +1,6 @@
-
 function ColorMyPencils(color)
 	color = color or "bamboo"
 	vim.cmd.colorscheme(color)
-
 end
 
 require('bamboo').setup  {
@@ -43,10 +41,6 @@ require('bamboo').setup  {
         background = true,    -- use background color for virtual text
     },
 }
-
-
-
-
 
 ColorMyPencils()
 vim.cmd(":hi Cursor guifg=black guibg= transparent")
