@@ -2,10 +2,10 @@ require("jonas.remap")
 require("jonas.set")
 require("autoclose").setup({
    keys = {
-      ["$"] = { escape = true, close = true, pair = "$$"},
+      ["$"] = { escape = false, close = true, pair = "$"},
    },
-})
-require('nvim-highlight-colors').setup {}
+   })
+   require('nvim-highlight-colors').setup {}
 require'wildcat'.setup{
    tomcat = {
        home = "/home/jonas/apache-tomee-microprofile-9.1.0/",

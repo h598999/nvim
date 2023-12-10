@@ -21,6 +21,8 @@ require('packer').startup(function(use)
   require('nvim_comment').setup()
   end })
 
+  use({ 'rose-pine/neovim', as = 'rose-pine' })
+
   use({
       "coffebar/neovim-project",
       config = function()
@@ -124,17 +126,6 @@ use("folke/zen-mode.nvim")
 use('brenoprata10/nvim-highlight-colors')
 use ('nvim-tree/nvim-web-devicons')
 use ('github/copilot.vim')
-use {
-    "folke/todo-comments.nvim",
-  dependencies = { "nvim-lua/plenary.nvim" },
-  opts = {
-    -- your configuration comes here
-    -- or leave it empty to use the default settings
-    -- refer to the configuration section below
-  }
-}
-
-
   use {
       'VonHeikemen/lsp-zero.nvim',
       branch = 'v2.x',
