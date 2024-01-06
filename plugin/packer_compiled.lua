@@ -160,7 +160,7 @@ _G.packer_plugins = {
     url = "https://github.com/williamboman/mason.nvim"
   },
   ["monokai-pro.nvim"] = {
-    config = { "\27LJ\2\n\v\0\1\1\0\0\0\1K\0\1\0˜\5\1\0\5\0$\0'6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\5\0005\4\4\0=\4\6\0035\4\a\0=\4\b\0035\4\t\0=\4\n\0035\4\v\0=\4\f\0035\4\r\0=\4\14\0035\4\15\0=\4\16\0035\4\17\0=\4\18\0035\4\19\0=\4\20\0035\4\21\0=\4\22\3=\3\23\0025\3\24\0=\3\25\0025\3\26\0=\3\27\0025\3\29\0005\4\28\0=\4\30\0035\4\31\0=\4 \3=\3!\0023\3\"\0=\3#\2B\0\2\1K\0\1\0\roverride\0\fplugins\21indent_blankline\1\0\2\28context_start_underline\1\22context_highlight\bpro\15bufferline\1\0\0\1\0\2\22underline_visible\1\23underline_selected\1\21background_clear\1\6\0\0\14float_win\15toggleterm\14telescope\14which-key\frenamer\14day_night\1\0\3\15day_filter\fclassic\venable\1\17night_filter\fclassic\vstyles\18tag_attribute\1\0\1\vitalic\2\15annotation\1\0\1\vitalic\2\14parameter\1\0\1\vitalic\2\14structure\1\0\1\vitalic\2\14functions\1\0\2\tbold\2\14undercurl\2\17storageclass\1\0\1\vitalic\2\ttype\1\0\1\vitalic\2\fkeyword\1\0\1\vitalic\2\fcomment\1\0\0\1\0\1\vitalic\2\1\0\5\20terminal_colors\2\rdevicons\2\27transparent_background\2\15inc_search\15background\vfilter\fclassic\nsetup\16monokai-pro\frequire\0" },
+    config = { "\27LJ\2\n\v\0\1\1\0\0\0\1K\0\1\0˜\5\1\0\5\0$\0'6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\5\0005\4\4\0=\4\6\0035\4\a\0=\4\b\0035\4\t\0=\4\n\0035\4\v\0=\4\f\0035\4\r\0=\4\14\0035\4\15\0=\4\16\0035\4\17\0=\4\18\0035\4\19\0=\4\20\0035\4\21\0=\4\22\3=\3\23\0025\3\24\0=\3\25\0025\3\26\0=\3\27\0025\3\29\0005\4\28\0=\4\30\0035\4\31\0=\4 \3=\3!\0023\3\"\0=\3#\2B\0\2\1K\0\1\0\roverride\0\fplugins\21indent_blankline\1\0\2\28context_start_underline\1\22context_highlight\bpro\15bufferline\1\0\0\1\0\2\23underline_selected\1\22underline_visible\1\21background_clear\1\6\0\0\14float_win\15toggleterm\14telescope\14which-key\frenamer\14day_night\1\0\3\15day_filter\fclassic\venable\1\17night_filter\fclassic\vstyles\18tag_attribute\1\0\1\vitalic\2\15annotation\1\0\1\vitalic\2\14parameter\1\0\1\vitalic\2\14structure\1\0\1\vitalic\2\14functions\1\0\2\tbold\2\14undercurl\2\17storageclass\1\0\1\vitalic\2\ttype\1\0\1\vitalic\2\fkeyword\1\0\1\vitalic\2\fcomment\1\0\0\1\0\1\vitalic\2\1\0\5\rdevicons\2\27transparent_background\2\15inc_search\15background\20terminal_colors\2\vfilter\fclassic\nsetup\16monokai-pro\frequire\0" },
     loaded = true,
     path = "/home/jonas/.local/share/nvim/site/pack/packer/start/monokai-pro.nvim",
     url = "https://github.com/loctvl842/monokai-pro.nvim"
@@ -245,7 +245,7 @@ _G.packer_plugins = {
     url = "https://github.com/javiorfo/nvim-wildcat"
   },
   ["nvim-window-picker"] = {
-    config = { "\27LJ\2\n˛\1\0\0\6\0\f\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\t\0005\4\5\0005\5\4\0=\5\6\0045\5\a\0=\5\b\4=\4\n\3=\3\v\2B\0\2\1K\0\1\0\17filter_rules\abo\1\0\0\fbuftype\1\3\0\0\rterminal\rquickfix\rfiletype\1\0\0\1\4\0\0\rneo-tree\19neo-tree-popup\vnotify\1\0\3\23other_win_hl_color\f#e35e4f\19autoselect_one\2\20include_current\1\nsetup\18window-picker\frequire\0" },
+    config = { "\27LJ\2\n˛\1\0\0\6\0\f\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\t\0005\4\5\0005\5\4\0=\5\6\0045\5\a\0=\5\b\4=\4\n\3=\3\v\2B\0\2\1K\0\1\0\17filter_rules\abo\1\0\0\fbuftype\1\3\0\0\rterminal\rquickfix\rfiletype\1\0\0\1\4\0\0\rneo-tree\19neo-tree-popup\vnotify\1\0\3\23other_win_hl_color\f#e35e4f\20include_current\1\19autoselect_one\2\nsetup\18window-picker\frequire\0" },
     loaded = true,
     path = "/home/jonas/.local/share/nvim/site/pack/packer/start/nvim-window-picker",
     url = "https://github.com/s1n7ax/nvim-window-picker"
@@ -304,34 +304,34 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: nvim-comment
-time([[Config for nvim-comment]], true)
-try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\17nvim_comment\frequire\0", "config", "nvim-comment")
-time([[Config for nvim-comment]], false)
--- Config for: monokai-pro.nvim
-time([[Config for monokai-pro.nvim]], true)
-try_loadstring("\27LJ\2\n\v\0\1\1\0\0\0\1K\0\1\0˜\5\1\0\5\0$\0'6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\5\0005\4\4\0=\4\6\0035\4\a\0=\4\b\0035\4\t\0=\4\n\0035\4\v\0=\4\f\0035\4\r\0=\4\14\0035\4\15\0=\4\16\0035\4\17\0=\4\18\0035\4\19\0=\4\20\0035\4\21\0=\4\22\3=\3\23\0025\3\24\0=\3\25\0025\3\26\0=\3\27\0025\3\29\0005\4\28\0=\4\30\0035\4\31\0=\4 \3=\3!\0023\3\"\0=\3#\2B\0\2\1K\0\1\0\roverride\0\fplugins\21indent_blankline\1\0\2\28context_start_underline\1\22context_highlight\bpro\15bufferline\1\0\0\1\0\2\22underline_visible\1\23underline_selected\1\21background_clear\1\6\0\0\14float_win\15toggleterm\14telescope\14which-key\frenamer\14day_night\1\0\3\15day_filter\fclassic\venable\1\17night_filter\fclassic\vstyles\18tag_attribute\1\0\1\vitalic\2\15annotation\1\0\1\vitalic\2\14parameter\1\0\1\vitalic\2\14structure\1\0\1\vitalic\2\14functions\1\0\2\tbold\2\14undercurl\2\17storageclass\1\0\1\vitalic\2\ttype\1\0\1\vitalic\2\fkeyword\1\0\1\vitalic\2\fcomment\1\0\0\1\0\1\vitalic\2\1\0\5\20terminal_colors\2\rdevicons\2\27transparent_background\2\15inc_search\15background\vfilter\fclassic\nsetup\16monokai-pro\frequire\0", "config", "monokai-pro.nvim")
-time([[Config for monokai-pro.nvim]], false)
 -- Config for: trouble.nvim
 time([[Config for trouble.nvim]], true)
 try_loadstring("\27LJ\2\nC\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\nicons\2\nsetup\ftrouble\frequire\0", "config", "trouble.nvim")
 time([[Config for trouble.nvim]], false)
--- Config for: neovim-project
-time([[Config for neovim-project]], true)
-try_loadstring("\27LJ\2\nº\1\0\0\4\0\v\0\0166\0\0\0009\0\1\0009\0\2\0\18\2\0\0009\0\3\0'\3\4\0B\0\3\0016\0\5\0'\2\6\0B\0\2\0029\0\a\0005\2\t\0005\3\b\0=\3\n\2B\0\2\1K\0\1\0\rprojects\1\0\0\1\4\0\0\14~/Skule/*\16~/Prosjekt/\16~/.config/*\nsetup\19neovim-project\frequire\fglobals\vappend\19sessionoptions\bopt\bvim\0", "config", "neovim-project")
-time([[Config for neovim-project]], false)
 -- Config for: neo-tree.nvim
 time([[Config for neo-tree.nvim]], true)
 try_loadstring("\27LJ\2\nË\2\0\0\4\0\v\0\0256\0\0\0009\0\1\0009\0\2\0'\2\3\0005\3\4\0B\0\3\0016\0\0\0009\0\1\0009\0\2\0'\2\5\0005\3\6\0B\0\3\0016\0\0\0009\0\1\0009\0\2\0'\2\a\0005\3\b\0B\0\3\0016\0\0\0009\0\1\0009\0\2\0'\2\t\0005\3\n\0B\0\3\1K\0\1\0\1\0\2\vtexthl\23DiagnosticSignHint\ttext\tÛ∞åµ\23DiagnosticSignHint\1\0\2\vtexthl\23DiagnosticSignInfo\ttext\tÔÅö \23DiagnosticSignInfo\1\0\2\vtexthl\23DiagnosticSignWarn\ttext\tÔÅ± \23DiagnosticSignWarn\1\0\2\vtexthl\24DiagnosticSignError\ttext\tÔÅó \24DiagnosticSignError\16sign_define\afn\bvim\0", "config", "neo-tree.nvim")
 time([[Config for neo-tree.nvim]], false)
+-- Config for: monokai-pro.nvim
+time([[Config for monokai-pro.nvim]], true)
+try_loadstring("\27LJ\2\n\v\0\1\1\0\0\0\1K\0\1\0˜\5\1\0\5\0$\0'6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\5\0005\4\4\0=\4\6\0035\4\a\0=\4\b\0035\4\t\0=\4\n\0035\4\v\0=\4\f\0035\4\r\0=\4\14\0035\4\15\0=\4\16\0035\4\17\0=\4\18\0035\4\19\0=\4\20\0035\4\21\0=\4\22\3=\3\23\0025\3\24\0=\3\25\0025\3\26\0=\3\27\0025\3\29\0005\4\28\0=\4\30\0035\4\31\0=\4 \3=\3!\0023\3\"\0=\3#\2B\0\2\1K\0\1\0\roverride\0\fplugins\21indent_blankline\1\0\2\28context_start_underline\1\22context_highlight\bpro\15bufferline\1\0\0\1\0\2\23underline_selected\1\22underline_visible\1\21background_clear\1\6\0\0\14float_win\15toggleterm\14telescope\14which-key\frenamer\14day_night\1\0\3\15day_filter\fclassic\venable\1\17night_filter\fclassic\vstyles\18tag_attribute\1\0\1\vitalic\2\15annotation\1\0\1\vitalic\2\14parameter\1\0\1\vitalic\2\14structure\1\0\1\vitalic\2\14functions\1\0\2\tbold\2\14undercurl\2\17storageclass\1\0\1\vitalic\2\ttype\1\0\1\vitalic\2\fkeyword\1\0\1\vitalic\2\fcomment\1\0\0\1\0\1\vitalic\2\1\0\5\rdevicons\2\27transparent_background\2\15inc_search\15background\20terminal_colors\2\vfilter\fclassic\nsetup\16monokai-pro\frequire\0", "config", "monokai-pro.nvim")
+time([[Config for monokai-pro.nvim]], false)
+-- Config for: nvim-window-picker
+time([[Config for nvim-window-picker]], true)
+try_loadstring("\27LJ\2\n˛\1\0\0\6\0\f\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\t\0005\4\5\0005\5\4\0=\5\6\0045\5\a\0=\5\b\4=\4\n\3=\3\v\2B\0\2\1K\0\1\0\17filter_rules\abo\1\0\0\fbuftype\1\3\0\0\rterminal\rquickfix\rfiletype\1\0\0\1\4\0\0\rneo-tree\19neo-tree-popup\vnotify\1\0\3\23other_win_hl_color\f#e35e4f\20include_current\1\19autoselect_one\2\nsetup\18window-picker\frequire\0", "config", "nvim-window-picker")
+time([[Config for nvim-window-picker]], false)
 -- Config for: nvim-surround
 time([[Config for nvim-surround]], true)
 try_loadstring("\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\18nvim-surround\frequire\0", "config", "nvim-surround")
 time([[Config for nvim-surround]], false)
--- Config for: nvim-window-picker
-time([[Config for nvim-window-picker]], true)
-try_loadstring("\27LJ\2\n˛\1\0\0\6\0\f\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\t\0005\4\5\0005\5\4\0=\5\6\0045\5\a\0=\5\b\4=\4\n\3=\3\v\2B\0\2\1K\0\1\0\17filter_rules\abo\1\0\0\fbuftype\1\3\0\0\rterminal\rquickfix\rfiletype\1\0\0\1\4\0\0\rneo-tree\19neo-tree-popup\vnotify\1\0\3\23other_win_hl_color\f#e35e4f\19autoselect_one\2\20include_current\1\nsetup\18window-picker\frequire\0", "config", "nvim-window-picker")
-time([[Config for nvim-window-picker]], false)
+-- Config for: nvim-comment
+time([[Config for nvim-comment]], true)
+try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\17nvim_comment\frequire\0", "config", "nvim-comment")
+time([[Config for nvim-comment]], false)
+-- Config for: neovim-project
+time([[Config for neovim-project]], true)
+try_loadstring("\27LJ\2\nº\1\0\0\4\0\v\0\0166\0\0\0009\0\1\0009\0\2\0\18\2\0\0009\0\3\0'\3\4\0B\0\3\0016\0\5\0'\2\6\0B\0\2\0029\0\a\0005\2\t\0005\3\b\0=\3\n\2B\0\2\1K\0\1\0\rprojects\1\0\0\1\4\0\0\14~/Skule/*\16~/Prosjekt/\16~/.config/*\nsetup\19neovim-project\frequire\fglobals\vappend\19sessionoptions\bopt\bvim\0", "config", "neovim-project")
+time([[Config for neovim-project]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

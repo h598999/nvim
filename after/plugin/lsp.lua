@@ -1,5 +1,4 @@
 local lsp = require('lsp-zero')
-
 lsp.preset("recommended")
 
 lsp.ensure_installed({
@@ -32,7 +31,6 @@ lsp.on_attach(function(client,bufnr)
     vim.keymap.set("n", "<leader>vca", function() vim.lsp.buf.code_action() end, ots)
     vim.keymap.set("n", "<leader>mm",function() vim.diagnostic.open_float() end, opts) 
 end);
-
 lsp.setup()
 vim.diagnostic.config({
     virtual_text = true

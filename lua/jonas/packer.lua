@@ -10,6 +10,7 @@ require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
   use "nvim-lua/plenary.nvim"
   use 'mfussenegger/nvim-jdtls'
+
   -- use {
   -- 	  'nvim-telescope/telescope.nvim', tag = '0.1.1',
   -- 	  -- or                            , branch = '0.1.x',
@@ -20,6 +21,7 @@ require('packer').startup(function(use)
     config = function()
   require('nvim_comment').setup()
   end })
+  
 
   use({ 'rose-pine/neovim', as = 'rose-pine' })
 
@@ -108,6 +110,7 @@ require('packer').startup(function(use)
           use ('ribru17/bamboo.nvim')
 
 
+
 use {
         'nvim-treesitter/nvim-treesitter',
         run = ':TSUpdate'
@@ -126,6 +129,7 @@ use("folke/zen-mode.nvim")
 use('brenoprata10/nvim-highlight-colors')
 use ('nvim-tree/nvim-web-devicons')
 use ('github/copilot.vim')
+
   use {
       'VonHeikemen/lsp-zero.nvim',
       branch = 'v2.x',
@@ -210,4 +214,6 @@ use {
     end
 }
 end)
+
+
 

@@ -1,6 +1,6 @@
 require('telescope').setup{
     defaults = {
-        file_ignore_patterns = { "%.class", "%.Identifier", "%.cmd", "env/*", "squashfs-root/usr/*", "%.so", "target/*"}
+        file_ignore_patterns = { "%.class", "%.Identifier", "%.cmd", "env/*", "squashfs-root/*", "%.so", "target/*"}
     }
 }
 local builtin = require('telescope.builtin')
@@ -17,4 +17,5 @@ end, { noremap = true, silent = true })
 vim.keymap.set('n', '<leader>ff', ':Telescope neovim-project discover<CR>', {noremap = true, silent = true})
 vim.keymap.set('n', '<leader>fh', ':Telescope neovim-project history<CR>', {noremap = true, silent = true})
 vim.keymap.set('n', '<leader>fr', ':Telescope neovim-project discover<CR>', {noremap = true, silent = true})
+vim.keymap.set('n', '<leader>h', ':Telescope help_tags<CR>', {noremap = true, silent = true})
 

@@ -7,7 +7,8 @@ vim.keymap.set("n", "<leader>zz", function()
                 -- * an absolute number of cells when > 1
                 -- * a percentage of the width / height of the editor when <= 1
                 -- * a function that returns the width or the height
-                width = 120, -- width of the Zen window
+                width = 200,
+                -- width of the Zen window
                 height = 1, -- height of the Zen window
                 -- by default, no options are changed for the Zen window
                 -- uncomment any of the options below, or add other vim.wo options you want to apply
@@ -32,7 +33,7 @@ vim.keymap.set("n", "<leader>zz", function()
                 twilight = { enabled = true }, -- enable to start Twilight when zen mode opens
                 gitsigns = { enabled = false }, -- disables git signs
                 context = {enabled = true},
-                tmux = { enabled = false }, -- disables the tmux statusline
+                tmux = { enabled = false}, -- disables the tmux statusline
                 -- this will change the font size on kitty when in zen mode
                 -- to make this work, you need to set the following kitty options:
                 -- - allow_remote_control socket-only
@@ -51,7 +52,7 @@ vim.keymap.set("n", "<leader>zz", function()
                 -- this will change the font size on wezterm when in zen mode
                 -- See alse also the Plugins/Wezterm section in this projects README
                 wezterm = {
-                    enabled = false,
+                    enabled = true,
                     -- can be either an absolute font size or the number of incremental steps
                     font = "+4", -- (10% increase per step)
                 },

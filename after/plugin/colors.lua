@@ -10,7 +10,7 @@ require('rose-pine').setup({
     bold_vert_split = false,
     dim_nc_background = true,
     disable_background = true,
-    disable_float_background = false,
+    disable_float_background = true,
     disable_italics = false,
 
     --- @usage string hex value or named color from rosepinetheme.com/palette
@@ -44,7 +44,7 @@ require('rose-pine').setup({
     -- Change specific vim highlight groups
     -- https://github.com/rose-pine/neovim/wiki/Recipes
     highlight_groups = {
-        ColorColumn = { bg = 'black' },
+        ColorColumn = { bg = 'transparent' },
 
         -- Blend colours against the "base" background
         CursorLine = { bg = 'foam', blend = 10 },
