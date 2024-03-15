@@ -19,5 +19,3 @@ vim.keymap.set("n", "<C-f>", ":silent !tmux neww ~/.local/bin/scripts/sessionize
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 vim.keymap.set('n', 'gb', ':b#<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('i', 'Right', 'v:lua.require"copilot".accept_suggestion()', { expr = true, noremap = true, silent = true })
-
-
