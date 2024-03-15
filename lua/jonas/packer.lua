@@ -10,6 +10,11 @@ require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
   use "nvim-lua/plenary.nvim"
   use 'mfussenegger/nvim-jdtls'
+  -- use ( { 'j-hui/fidget.nvim',
+  -- config = function ()
+  --     require('fidget').setup()
+  -- end} )
+
 
   -- use {
   -- 	  'nvim-telescope/telescope.nvim', tag = '0.1.1',
@@ -21,7 +26,10 @@ require('packer').startup(function(use)
     config = function()
   require('nvim_comment').setup()
   end })
-  
+
+  -- use({ 'neovim/nvim-lspconfig',
+  -- requires = {'williamboman/nvim-lspconfig.nvim', 'neovim/nvim-lspconfig', 'williamboman/mason.nvim' },
+  -- })
 
   use({ 'rose-pine/neovim', as = 'rose-pine' })
 
@@ -101,8 +109,7 @@ require('packer').startup(function(use)
                       context_start_underline = false,
                   },
               },
-              ---@param c Colorscheme
-              override = function(c) end,})
+              })
 
           end}
 
@@ -128,7 +135,6 @@ use('ThePrimeagen/vim-be-good')
 use("folke/zen-mode.nvim")
 use('brenoprata10/nvim-highlight-colors')
 use ('nvim-tree/nvim-web-devicons')
-use ('github/copilot.vim')
 
   use {
       'VonHeikemen/lsp-zero.nvim',
@@ -174,7 +180,7 @@ use {
  use {
   "nvim-neo-tree/neo-tree.nvim",
     branch = "v3.x",
-    requires = { 
+    requires = {
       "nvim-lua/plenary.nvim",
       "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
       "MunifTanjim/nui.nvim",

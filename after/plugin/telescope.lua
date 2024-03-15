@@ -11,7 +11,7 @@ vim.keymap.set('n', '<leader>pf', builtin.find_files, {})
 --
 vim.keymap.set('n', '<leader>pd', function()
     local search_term = vim.fn.input("Grep > ")
-    builtin.grep_string({ search = search_term })
+    builtin.grep_string({ search = search_term})
 end, { noremap = true, silent = true })
 
 vim.keymap.set('n', '<leader>ff', ':Telescope neovim-project discover<CR>', {noremap = true, silent = true})

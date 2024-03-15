@@ -4,18 +4,17 @@
       update_focused_file = {
           enable = true,
           update_root = true
-      },
+      ,
       event_handlers = {
       {
       event = "file_opened",
       handler = function(file_path)
           -- auto close
-       -- vimc.cmd("Neotree close")
+          -- vimc.cmd("Neotree close")
           -- OR
           vim.cmd("Neotree close")
       end
   },
-  
         },
         close_if_last_window = false, -- Close Neo-tree if it is the last window left in the tab
         popup_border_style = "rounded",
@@ -172,7 +171,7 @@
         filesystem = {
           filtered_items = {
             visible = false, -- when true, they will just be displayed differently than normal items
-            hide_dotfiles = true,
+            hide_dotfiles = false,
             hide_gitignored = false,
             hide_hidden = true, -- only works on Windows for hidden files/directories
             hide_by_name = {
@@ -288,4 +287,4 @@
             }
           }
         }
-      })
+      }})

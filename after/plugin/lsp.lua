@@ -2,7 +2,6 @@ local lsp = require('lsp-zero')
 lsp.preset("recommended")
 
 lsp.ensure_installed({
-	'jdtls',
 	'rust_analyzer',
 })
 
@@ -31,7 +30,24 @@ lsp.on_attach(function(client,bufnr)
     vim.keymap.set("n", "<leader>vca", function() vim.lsp.buf.code_action() end, ots)
     vim.keymap.set("n", "<leader>mm",function() vim.diagnostic.open_float() end, opts) 
 end);
-lsp.setup()
+lsp.configure('html', {
+    single_file_support = false,
+    filetypes = {'html', 'jsp'},
+    on_attach = function(client, bufnr)
+
+    end
+})
+lsp.configure('htmx', {
+    single_file_support = false,
+    filetypes = {'html', 'jsp'},
+    on_attach = function(client, bufnr)
+
+    end
+})
+-- lsp.configure('jdtls',{
+--    
+-- })
 vim.diagnostic.config({
     virtual_text = true
 })
+lsp.setup()

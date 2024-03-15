@@ -32,3 +32,4 @@ vim.api.nvim_create_autocmd('BufReadCmd', {
     require('man').read_page(vim.fn.matchstr(params.match, 'man://\\zs.*'))
   end,
 })
+
