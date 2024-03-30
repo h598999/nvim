@@ -122,3 +122,17 @@ BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en
 
 !ENTRY org.eclipse.jdt.ls.core 1 0 2024-02-19 10:55:10.278
 !MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is stopping:
+!SESSION 2024-03-21 19:09:30.081 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.10
+java.vendor=Private Build
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en
+
+!ENTRY org.eclipse.core.resources 2 10035 2024-03-21 19:09:30.674
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-03-21 19:09:30.944
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-03-21 19:09:31.077
+!MESSAGE Main thread is waiting

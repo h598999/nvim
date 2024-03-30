@@ -44,6 +44,19 @@ lsp.configure('htmx', {
 
     end
 })
+
+lsp.configure('pylsp', {
+    settings ={
+        pylsp = {
+            plugins ={
+                pycodestyle = {
+                    ignore = {'E501', 'W391', 'E305', 'W291', 'E303', 'W293', 'W504', 'E225', 'E275'}
+                }
+            }
+        }
+    }
+})
+
 -- lsp.configure('jdtls',{
 --    
 -- })

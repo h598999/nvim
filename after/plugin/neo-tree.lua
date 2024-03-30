@@ -1,21 +1,5 @@
-      require("neo-tree").setup({
-      sync_root_with_cwd = true,
-      respect_buf_cwd = true,
-      update_focused_file = {
-          enable = true,
-          update_root = true
-      ,
-      event_handlers = {
-      {
-      event = "file_opened",
-      handler = function(file_path)
-          -- auto close
-          -- vimc.cmd("Neotree close")
-          -- OR
-          vim.cmd("Neotree close")
-      end
-  },
-        },
+      require("neo-tree").setup(
+        {
         close_if_last_window = false, -- Close Neo-tree if it is the last window left in the tab
         popup_border_style = "rounded",
         enable_git_status = true,
@@ -108,7 +92,7 @@
         -- see `:h neo-tree-custom-commands-global`
         commands = {},
         window = {
-          position = "current",
+          position = "left",
           width = 40,
           mapping_options = {
             noremap = true,
@@ -122,7 +106,8 @@
             ["<2-LeftMouse>"] = "open",
             ["<cr>"] = "open",
             ["<esc>"] = "cancel", -- close preview or floating neo-tree window
-            ["P"] = { "toggle_preview", config = { use_float = true } },
+            ["P"] = { "toggle_preview", config = { use_float = true, use_image_nvim = true } },
+            -- Read `# Preview Mode` for more information
             ["l"] = "focus_preview",
             ["S"] = "open_split",
             ["s"] = "open_vsplit",
@@ -171,31 +156,26 @@
         filesystem = {
           filtered_items = {
             visible = false, -- when true, they will just be displayed differently than normal items
-            hide_dotfiles = false,
-            hide_gitignored = false,
+            hide_dotfiles = true,
+            hide_gitignored = true,
             hide_hidden = true, -- only works on Windows for hidden files/directories
             hide_by_name = {
               --"node_modules"
             },
             hide_by_pattern = { -- uses glob style patterns
-              --"*.meta",
+              "*.meta",
               --"*/src/*/tsconfig.json",
-              "*.class",
-              "*.cmd",
-              "*.Identifier"
             },
             always_show = { -- remains visible even if other settings would normally hide it
-              --".gitignored",
+              ".gitignored",
             },
             never_show = { -- remains hidden even if visible is toggled to true, this overrides always_show
-              --".DS_Store",
+              ".DS_Store",
               --"thumbs.db"
             },
             never_show_by_pattern = { -- uses glob style patterns
               --".null-ls_*",
-                "*.class",
-                "*.Identifier",
-                "*.cmd"
+                "*.class"
             },
           },
           follow_current_file = {
@@ -203,8 +183,8 @@
             --               -- the current file is changed while the tree is open.
             leave_dirs_open = false, -- `false` closes auto expanded dirs, such as with `:Neotree reveal`
           },
-          group_empty_dirs = true, -- when true, empty folders will be grouped together
-          hijack_netrw_behavior = "open_default", -- netrw disabled, opening a directory opens neo-tree
+          group_empty_dirs = false, -- when true, empty folders will be grouped together
+          hijack_netrw_behavior = "open_current", -- netrw disabled, opening a directory opens neo-tree
                                                   -- in whatever position is specified in window.position
                                 -- "open_current",  -- netrw disabled, opening a directory opens within the
                                                   -- window like netrw would, regardless of window.position
@@ -287,4 +267,4 @@
             }
           }
         }
-      }})
+      })

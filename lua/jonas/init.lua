@@ -72,6 +72,5 @@ require'web-tools'.setup({
   },
 })
 }
-require('lualine').setup()
 
 
